@@ -23,6 +23,7 @@ namespace BlazorWasmAuth
 
             builder.Services.AddAuthorizationCore();
             builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
+            builder.Services.AddSingleton<TokenSessionState>();
 
             await builder.Build().RunAsync();
         }

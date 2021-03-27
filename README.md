@@ -1,0 +1,1 @@
+#Blazor WASM (Webassembly) simple authentication

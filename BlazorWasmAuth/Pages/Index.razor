@@ -4,4 +4,13 @@
 
 Welcome to your new app.
 
+<AuthorizeView>
+    <Authorized>
+        The user is authorized: <b>@context.User.Identity.Name</b>
+    </Authorized>
+    <NotAuthorized>
+        The User is not authorized
+    </NotAuthorized>
+</AuthorizeView>
+
 <SurveyPrompt Title="How is Blazor working for you?" />
